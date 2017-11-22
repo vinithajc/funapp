@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	//Bind Events
 	document.getElementById("themePickerOptions").addEventListener("click", common.changeTheme);
 	document.getElementById("dropdown-content-logo").addEventListener("click", svgSection.applyAnimation);
+	document.getElementById("dropbtn-logo").addEventListener("click", svgSection.showOptions);
 	document.getElementById("game-list").addEventListener("click", common.switchTab);
 	document.getElementById("gameBoard").addEventListener("click", tictactoe.userTurn);
 	document.getElementById("restartGame").addEventListener("click", tictactoe.restartGame);
