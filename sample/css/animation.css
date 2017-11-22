@@ -1,0 +1,130 @@
+
+.animate-sideway {
+    -webkit-animation: sideway 5s linear;
+    animation: sideway 5s linear;
+}
+
+
+@-webkit-keyframes sideway {
+    0%   { left:50px; top:110px;}
+    25%  { left:100px; top:110px;}
+    50%  {left:50px; top:110px;}
+    75%  {left:0px; top:110px;}
+    100% { left:50px; top:110px;}
+}
+
+
+@keyframes sideway {
+    0%   { left:50px; top:110px;}
+    25%  { left:100px; top:110px;}
+    50%  {left:50px; top:110px;}
+    75%  {left:0px; top:110px;}
+    100% { left:50px; top:110px;}
+}
+
+.animate-updown {
+    -webkit-animation: updown 5s linear;
+    animation: updown 5s linear;
+}
+
+@-webkit-keyframes updown {
+     0%   { left:50px; top:110px;}
+    25%  { left:50px; top:0px;}
+    50%  {left:50px; top:110px;}
+    75%  {left:50px; top:220px;}
+    100% { left:50px; top:110px;}
+}
+
+
+@keyframes updown {
+    0%   { left:50px; top:110px;}
+    25%  { left:50px; top:0px;}
+    50%  {left:50px; top:110px;}
+    75%  {left:50px; top:220px;}
+    100% { left:50px; top:110px;}
+}
+
+.animate-corner {
+    -webkit-animation: corner 5s linear;
+    animation: corner 5s linear;
+}
+
+@-webkit-keyframes corner {
+    0%   { left:0px; top:0px;}
+    25%  { left:100px; top:0px;}
+    50%  {left:100px; top:220px;}
+    75%  {left:0px; top:220px;}
+    100% { left:0px; top:0px;}
+}
+
+
+@keyframes corner {
+	0%   { left:0px; top:0px;}
+    25%  { left:100px; top:0px;}
+    50%  {left:100px; top:220px;}
+    75%  {left:0px; top:220px;}
+    100% { left:0px; top:0px;}
+}
+
+.animate-spin .letter-z {
+	-webkit-animation: spin 4s linear ;
+    animation: spin 4s linear ;
+}
+
+.animate-spin .letter-o-green {
+	-webkit-animation: spin 4s linear ;
+    animation: spin 4s linear ;
+}
+
+.animate-spin .letter-h {
+	-webkit-animation: spin 4s linear ;
+    animation: spin 4s linear ;
+}
+
+.animate-spin .letter-o-yellow {
+	-webkit-animation: spin 4s linear ;
+    animation: spin 4s linear ;
+}
+
+@-webkit-keyframes spin { 100% { -webkit-transform:  scale(0.5) rotateY(360deg);} }
+@keyframes spin { 100% { -webkit-transform: scale(0.5) rotateY(360deg); transform:  scale(0.5) rotateY(360deg); } }
+ 
+
+.animate-zoom  .letter-z {
+	animation: zoom 3s ease-in-out;
+   -webkit-animation: zoom 3s ease-in-out;
+}
+
+.animate-zoom  .letter-o-green {
+	animation: zoom 3s ease-in-out;
+   -webkit-animation: zoom 3s ease-in-out;
+   animation-delay: 1s;
+   -webkit-animation-delay: 1s;
+}
+
+.animate-zoom  .letter-h {
+	animation: zoom 3s ease-in-out;
+   -webkit-animation: zoom 3s ease-in-out;
+   animation-delay: 2s;
+   -webkit-animation-delay: 2s;
+}
+
+.animate-zoom  .letter-o-yellow {
+	animation: zoom 3s ease-in-out;
+   -webkit-animation: zoom 3s ease-in-out;
+   animation-delay: 3s;
+   -webkit-animation-delay: 3s;
+}
+@-webkit-keyframes zoom {
+     0%	{transform: scale(1) rotate(0deg);}
+  100%	{transform: scale(1.25) rotate(0.1deg);}
+}
+
+
+@keyframes zoom {
+   0%	{transform: scale(1) rotate(0deg);}
+  100%	{transform: scale(1.25) rotate(0.1deg);}
+}
+
+.header {
+}

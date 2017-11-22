@@ -1,0 +1,549 @@
+
+@font-face {
+    font-family: proxima_nova_rgregular;
+    src: url(../fonts/ProximaNova-Reg-webfont.woff);
+}
+
+@font-face {
+    font-family: airal_rounded_bold;
+    src: url(../fonts/ARLRDBD.TTF);   
+}
+
+/***********display property starts***********/
+
+.dIB {
+    display: inline-block;
+}
+
+.dB {
+	display: block;
+}
+
+.dN {
+	display: none;
+}
+
+/***********display property ends***********/
+
+/***********position property starts***********/
+
+.fL {
+	float : left;
+}
+
+.fR {
+	float : right;
+}
+
+/***********position property starts***********/
+
+/***********background-color property starts***********/
+
+.bg-orange {
+	background-color: orange;
+}
+
+.bg-red {
+	background-color: red;
+}
+
+.bg-brown {
+	background-color: brown;
+}
+
+.bg-gray {
+	background-color: gray;
+}
+
+.bg-green {
+	background-color: green;
+}
+
+.bg-blue {
+	background-color: blue;
+}
+
+.bg-violet {
+	background-color: violet;
+}
+
+.bg-aqua{
+	background-color: aqua;
+}
+
+/***********background-color property ends***********/
+
+.theme-orange div.theme {
+	border-color :orange;
+}
+
+.theme-green div.theme {
+	border-color :green;
+}
+
+.theme-red div.theme {
+	border-color :red;
+}
+
+.theme-blue div.theme {
+	border-color :blue;
+}
+
+.theme-violet div.theme {
+	border-color :violet;
+}
+
+.theme-gray div.theme {
+	border-color :gray;
+}
+
+.theme-aqua div.theme {
+	border-color :aqua;
+}
+
+.theme-brown div.theme {
+	border-color :brown;
+}
+/***********font-size property starts***********/
+
+.f13 {
+	font-size : 13px;
+} 
+
+.f25 {
+	font-size: 25px;
+}
+/***********font-size property ends***********/
+
+.pA {
+	position: absolute;
+}
+
+body {	
+	background-image: url("../images/background.jpg");
+	font-family: proxima_nova_rgregular;
+	
+}
+	
+.main {
+	overflow : hidden;
+}
+
+.header {
+   background-color: rgba(0, 0, 0, 0.6);
+   color: white;
+   position: fixed;
+   width: 100%;
+   height: 60xp;
+   top: 0;
+   left: 0;
+   border-bottom: 5px solid;
+   text-align: center;
+}
+
+.header .header-title {
+	margin-top: 10px;
+	font-family: airal_rounded_bold;
+}
+
+.header-drop-down-list {
+	float: right;
+	margin-right: 25px;
+}
+
+.drop-down {
+	position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    min-width: 200px;
+    min-height: 110px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 200;
+    margin-right: -12px;
+    margin-top: 6px;
+}
+
+
+.drop-down:hover .dropdown-content {
+    display: block;
+}
+
+.game-drop-down {
+	position: relative;
+    display: inline-block;
+}
+
+.game-dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 200;
+    margin-right: -12px;
+    margin-top: 6px;
+}
+
+
+.game-drop-down:hover .game-dropdown-content {
+    display: block;
+}
+
+.arrow {
+	top: -20px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom: 11px solid #fff;
+    left: auto;
+    right: 16.5px;
+}
+
+
+
+.themePickerTitle {
+	margin: 5px;
+    border-bottom: 2px solid;
+}
+
+.themePickerRows {
+    display: flex;	
+}
+
+.themePickerItem {
+    width: 42px;
+    height: 30px;
+    margin: 4px;
+}
+
+.header ul {
+	list-style: none;
+}
+
+.header li {
+	float: left;
+    position: relative;
+    margin-right: 1px;
+}
+
+.header .game-drop-down .gamesList {
+    width: 92px;
+    margin: 6px;
+}
+
+.footer {
+   background-color: rgba(0, 0, 0, 0.6);
+   color: white;
+   position: fixed;
+   width: 100%;
+   height: 30px;
+   bottom: 0;
+   left: 0;
+   text-align: center;	
+}
+
+.svgIconsImg {
+	background: transparent url(../images/svgicons.svg) no-repeat 0 0;
+}
+
+.settingNewIcon {
+	background-position: -275px -67px;
+    width: 22px;
+    height: 21px;
+}
+
+.container {
+	padding: 10px;
+  	margin-top: 100px;
+}
+
+.column-container {
+	border: 2px solid;
+	border-radius: 15px;
+	background-color: white;
+	height: 535px;
+	float:left;
+    width:30%;
+    margin:0 0.5%;
+    margin-bottom: 20px;
+    margin-left: 28px;	
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets and mobile phones: */
+  
+  .container {
+	padding: 10px;
+  	margin-top: 35px;
+	}
+	
+  .column-container {
+	border: 2px solid;
+	border-radius: 15px;
+	background-color: white;
+	min-height: 480px;
+	float:left;
+    width:97%;
+    margin:0 0.5%;
+    margin-bottom: 25px;
+	}
+	
+.twitter-container {
+	border-radius: 12px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -17px; 
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+	}
+}
+
+.twitter-container {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -17px; 
+    overflow: auto;
+    height: 100%;
+     width: 100%;
+}
+
+.zoho-logo-parent {
+	width: 100%;
+	height: 100%;
+}
+
+.zoho-logo-options {
+	width: 100%;
+	height: 20%;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.zoho-logo {	
+	height: 80%;
+}
+
+.svg-div {
+	position: relative;
+	top: 110px;
+    left: 50px;
+    font-family: airal_rounded_bold;
+}
+
+.dropbtn-logo {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+     min-width: 150px;
+}
+
+.dropdown-logo {
+    display: inline-block;
+    
+}
+
+.dropdown-content-logo { 
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-bottom: 1px solid gray;
+}
+
+.dropdown-content-logo div {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content-logo div:hover {background-color: #f1f1f1}
+
+
+.dropdown-logo:hover .dropbtn-logo {
+    background-color: #3e8e41;
+}
+
+.tAC {
+	text-align: center;	
+}
+
+.fCB {
+	color: black;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.ticMark {
+	background-position: -205px -1338px; 
+	width: 28px;
+	height: 25px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 35%;
+    height: 60%;
+    overflow: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    position: fixed;
+    top: 10px;
+    right: 30px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+blockquote.twitter-tweet {
+  display: inline-block;
+  padding: 16px;
+  margin: 10px 0;
+  max-width: 468px;
+  border: #ddd 1px solid;
+  border-top-color: #eee;
+  border-bottom-color: #bbb;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  font: bold 14px/18px Helvetica, Arial, sans-serif;
+  color: #000;
+}
+
+blockquote.twitter-tweet p {
+  font: normal 18px/24px Georgia, "Times New Roman", Palatino, serif;
+  margin: 0 5px 10px 0;
+}
+
+blockquote.twitter-tweet a[href^="https://twitter.com"] {
+  font-weight: normal;
+  color: #666;
+  font-size: 12px;
+}
+
+/* Color Highlight for keyboard navigation */
+
+a.twitter-timeline:focus {
+  outline: none;
+  border-color: #0089cb;
+}
+
+.audio {
+	position: relative;
+    top: 20px;
+    left: 5px;
+    text-align: center;
+}
+
+.audio p {
+	text-align: center;
+    white-space: nowrap; 
+    width: 113px; 
+    overflow: hidden; 
+   	padding-left: 135px;
+}
+
+.text-effect {	
+    -webkit-animation: text-anime 5s linear infinite;
+    animation: text-anime 5s linear infinite;
+}
+
+@-webkit-keyframes text-anime {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+}
+
+/* Standard syntax */
+@keyframes text-anime {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+}
+
+.audio p:hover {
+	text-align: center;
+    text-overflow: inherit;
+    overflow: visible;
+    padding-left: 135px;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}

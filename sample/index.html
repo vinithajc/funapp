@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/animation.css">
+     <link rel="stylesheet" type="text/css" href="css/tictactoe.css">
+    <link rel="stylesheet" type="text/css"  media="all" href="css/themes/orange.css" id="theme_css" />
+  </head>
+  
+  <body class="theme-orange">
+  
+    <div class="main">
+    
+    		<!-- header starts -->
+    		<div class="header theme">
+    			<ul class="header-drop-down-list">
+    			   <li class="game-drop-down">
+    					<span class="gameIcon svgIconsImg dIB pointer"></span> 
+    				    	<div class="game-dropdown-content dN">
+    						<div class="arrow"></div>
+    						<div class="tAC fCB f13 gamesList pointer" id="game-list"> Tic-Tac-Toe </div>
+    					</div>
+    				</li>
+    				<li class="drop-down	">
+    					<span class="settingNewIcon svgIconsImg dIB pointer"></span> 
+    					<div class="dropdown-content dN" id="themePicker">
+    						<div class="arrow"></div>
+    						<div class="themePickerTitle tAC fCB f13 theme"> Themes </div>
+    						<div class="themePickerOptions" id="themePickerOptions">
+    							<div class="themePickerRows">
+    								<div class="themePickerItem bg-orange pointer" data-theme="orange"><div class="svgIconsImg ticMark"></div></div>
+  								<div class="themePickerItem bg-red pointer" data-theme="red"> <div></div></div>
+  								<div class="themePickerItem bg-brown pointer"  data-theme="brown"><div></div></div>  
+  								<div class="themePickerItem bg-gray pointer" data-theme="gray"><div></div></div>  
+    							</div>
+    							<div class="themePickerRows">
+    								<div class="themePickerItem bg-green pointer" data-theme="green"><div></div></div>
+  								<div class="themePickerItem bg-blue pointer" data-theme="blue"><div></div></div>
+  								<div class="themePickerItem bg-violet pointer" data-theme="violet"><div></div></div>  
+  								<div class="themePickerItem bg-aqua pointer"  data-theme="aqua"><div></div></div>  
+    							</div>
+    						</div>
+    					</div>
+    				</li>
+    			</ul>  			
+    			<!-- div class="header-title f25">Fun Project</div -->
+    		</div>
+    		
+    		<div class="backToHome pointer" id="backToHome">
+    			< Home
+    		</div>
+
+		<!-- container starts -->
+		<div class="container dN" id="container">
+		
+   			<div class="column-container theme" id="twitter">
+   				<div class="twitter-container " id="twitter-container">
+   					<a class="twitter-timeline" href="https://twitter.com/zoho?ref_src=twsrc%5Etfw"></a>
+   				</div> 
+   			</div>
+   			
+   			<div class="column-container theme" id="media">
+				<div>
+					<div>
+						<video width="100%" height="300px;" poster="images/video-icon.png" controls  controlsList="nodownload"> 
+        					</video>
+					</div>
+					<div class="audio">
+						<p class="text-effect"><b>Hear only audio here!</b></p>
+						<audio width="100%" controls  controlsList="nodownload"> 
+        					</audio>
+					</div>
+				</div>
+			</div >
+			
+   			<div class="column-container theme" id="logo">
+   			
+   				<div class="zoho-logo-parent">
+   				
+	   				<div class="zoho-logo-options">
+	 					<div class="dropdown-logo">
+	  						<button class="dropbtn-logo">Animate</button>
+	  						<div class="dropdown-content-logo pointer dN" id="dropdown-content-logo">
+	   						<div data-animate="updown">Up & Down</div>
+	    						<div data-animate="corner">Corner</div>
+	    						<div data-animate="sideway">Side Way</div>
+	    						<div data-animate="zoom">Zoom</div>
+	    						<div data-animate="spin">Spin</div>
+	  						</div>
+						</div>
+	   				</div>
+	   				
+   				<div class="zoho-logo" >
+   					<div class="svg-div" id="zoho-logo">
+	   					<svg width="80" height="90" class="fL letter-z">
+							<polygon points="0 20, 60 20, 60 80, 0 80" style="fill:#C82334;stroke-width:1;" transform="translate(10) rotate(-10 60 50)"/>
+							<polygon points="60 20, 67 0, 67 60, 60 80" style="fill:#781015;stroke-width:1;" transform="translate(10) rotate(-10 60 50)"/>
+							<polygon points="10 0, 67 0, 60 20, 0 20" style="fill:#F0473E;stroke-width:1;" transform="translate(10) rotate(-10 60 50)"/>
+							<text x="30" y="73" font-size="70" text-anchor="middle" fill="white" transform="translate(10) rotate(-10 60 50)">Z</text>
+						</svg>
+						
+						<svg width="80" height="90" class="fL letter-o-green">
+							<polygon points="20 20, 80 20, 80 80, 20 80" style="fill:#24A444;stroke-width:1;" transform=" rotate(10 15 20)"/>
+							<polygon points="10 10, 20 20, 20 80, 10 70" style="fill:#6DC06A;stroke-width:1;" transform=" rotate(10 15 20)"/>
+							<polygon points="10 10, 70 10, 80 20, 20 20" style="fill:#98D19E;stroke-width:1;" transform=" rotate(10 15 20)"/>
+							<text x="50" y="73" font-size="70" text-anchor="middle" fill="white" transform=" rotate(10 15 20)">O</text>
+						</svg>
+	   				
+	   					<svg width="75" height="90" class="fL letter-h">
+							<polygon points="0 20, 60 20, 60 80, 0 80" style="fill:#087DC0;stroke-width:1;" transform="translate(10) rotate(-10 60 80)"/>
+							<polygon points="60 20, 67 7, 67 70, 60 80" style="fill:#0E97DA;stroke-width:1;" transform="translate(10) rotate(-10 60 80)"/>
+							<polygon points="10 7, 67 7, 60 20, 0 20" style="fill:#8FCAEC;stroke-width:1;" transform="translate(10) rotate(-10 60 80)"/>
+							<text x="30" y="73" font-size="70" text-anchor="middle" fill="white" transform="translate(10) rotate(-10 60 80)">H</text>
+						</svg>
+	
+	   					<svg width="70" height="80" class="fL letter-o-yellow">
+						  <polygon points="0 20, 60 20, 60 80, 0 80" style="fill:#FFE00C;stroke-width:1;"/>
+						  <polygon points="60 20, 70 10, 70 70, 60 80" style="fill:#E49425;stroke-width:1;"/>
+						  <polygon points="10 10, 70 10, 60 20, 0 20" style="fill:#FCF274;stroke-width:1;"/>
+						  <text x="30" y="73" font-size="70" text-anchor="middle" fill="white">O</text>
+						</svg>
+					</div>
+   				</div>
+   				
+   			</div>
+		
+		</div>
+		
+    </div>
+    
+    <div id="tictactoe" class="tictactoe">
+    		<div class="gameHeader" id="gameHeader"> 
+    			<div class="gamedropdown fL">
+			<div class="gamedropbtn" id="level">Easy</div>
+  				<div class="gamedropdown-content">
+    					<div data-level="easy">Easy</div>
+    					<div data-level="medium">Medium</div>
+    					<div data-level="hard">Hard</div>
+    					<div data-level="friend">Vs Friend</div>
+  				</div>
+    			</div>
+    			<div class="player fL gamedropdown">
+				<div class="gamedropbtn" id="player">Play X</div>
+  				<div class="gamedropdown-content">
+    					<div data-player="x">Play X</div>
+    					<div data-player="o">Play O</div>
+  				</div>
+    			</div>
+    		</div>
+    		<div class="gameBoard" id="gameBoard">
+    			<div id="svgGameBoard">
+    			<div class="svgGameBoard">
+				<svg height="320" width="320">
+    					<line x1="105" y1="0" x2="105" y2="320"stroke="white" stroke-width="10"/>
+          			<line x1="215" y1="0" x2="215" y2="320" stroke="white" stroke-width="10"/>
+          			<line x1="0" y1="105" x2="320" y2="105" stroke="white" stroke-width="10"/>
+          			<line x1="0" y1="215" x2="320" y2="215" stroke="white" stroke-width="10"/>
+				</svg>
+			</div>
+			<div class="gameTable">
+				<div class="gameRow">
+					<div class="gameCell cellEmpty" data-cell=1 id="cell1">
+						<svg class="elementO" height="100" width="100" stroke="white" stroke-width="7" fill="none">
+   							<circle class="checkmark__circle" cx="50" cy="50" r="30" fill="none" />
+						</svg>
+						<svg class="elementX" height="100" width="100" stroke="white" stroke-width="7" fill="none">
+   							<path d="M25 25 L75 75 Z" />
+ 							<path d="M75 25 L25 75 Z" />	
+						</svg>
+					</div>
+					<div class="gameCell cellEmpty" data-cell=2 id="cell2">
+						<svg class="elementO" height="100" width="100" stroke="white" stroke-width="7" fill="none">
+   							<circle class="checkmark__circle" cx="50" cy="50" r="30" fill="none" />
+						</svg>
+						<svg class="elementX" height="100" width="100" stroke="white" stroke-width="7" fill="none">
+   							<path d="M25 25 L75 75 Z" />
+ 							<path d="M75 25 L25 75 Z" />	
+						</svg>
+					</div>
+					<div class="gameCell cellEmpty" data-cell=3 id="cell3">
+						<svg class="elementO" height="100" width="100" stroke="white" stroke-width="7" fill="none">
+   							<circle class="checkmark__circle" cx="50" cy="50" r="30" fill="none" />
+						</svg>
+						<svg class="elementX" height="100" width="100" stroke="white" stroke-width="7" fill="none">
+   							<path d="M25 25 L75 75 Z" />
+ 							<path d="M75 25 L25 75 Z" />	
+						</svg>
+					</div>
+				</div>
+				<div class="gameRow">
+					<div class="gameCell cellEmpty" data-cell=4 id="cell4">
+						<svg class="elementO" height="100" width="100" stroke="white" stroke-width="7" fill="none">
+   							<circle class="checkmark__circle" cx="50" cy="50" r="30" fill="none" />
+						</svg>
+						<svg class="elementX" height="100" width="100" stroke="white" stroke-width="7" fill="none">
+   							<path d="M25 25 L75 75 Z" />
+ 							<path d="M75 25 L25 75 Z" />	
+						</svg>
+					</div>
+					<div class="gameCell cellEmpty" data-cell=5 id="cell5">
+						<svg class="elementO" height="100" width="100" stroke="white" stroke-width="7" fill="none">
+   							<circle class="checkmark__circle" cx="50" cy="50" r="30" fill="none" />
+						</svg>
+						<svg class="elementX" height="100" width="100" stroke="white" stroke-width="7" fill="none">
+   							<path d="M25 25 L75 75 Z" />
+ 							<path d="M75 25 L25 75 Z" />	
+						</svg>					
+					</div>
+					<div class="gameCell cellEmpty" data-cell=6 id="cell6">
+						<svg class="elementO" height="100" width="100" stroke="white" stroke-width="7" fill="none">
+   							<circle class="checkmark__circle" cx="50" cy="50" r="30" fill="none" />
+						</svg>
+						<svg class="elementX" height="100" width="100" stroke="white" stroke-width="7" fill="none">
+   							<path d="M25 25 L75 75 Z" />
+ 							<path d="M75 25 L25 75 Z" />	
+						</svg>			
+					</div>
+				</div>
+				<div class="gameRow">
+					<div class="gameCell cellEmpty" data-cell=7 id="cell7">
+						<svg class="elementO" height="100" width="100" stroke="white" stroke-width="7" fill="none">
+   							<circle class="checkmark__circle" cx="50" cy="50" r="30" fill="none" />
+						</svg>
+						<svg class="elementX" height="100" width="100" stroke="white" stroke-width="7" fill="none">
+   							<path d="M25 25 L75 75 Z" />
+ 							<path d="M75 25 L25 75 Z" />	
+						</svg>			
+					</div>
+					<div class="gameCell cellEmpty" data-cell=8 id="cell8">
+						<svg class="elementO" height="100" width="100" stroke="white" stroke-width="7" fill="none">
+   							<circle class="checkmark__circle" cx="50" cy="50" r="30" fill="none" />
+						</svg>
+						<svg class="elementX" height="100" width="100" stroke="white" stroke-width="7" fill="none">
+   							<path d="M25 25 L75 75 Z" />
+ 							<path d="M75 25 L25 75 Z" />	
+						</svg>
+					</div>
+					<div class="gameCell cellEmpty" data-cell=9 id="cell9">
+						<svg class="elementO" height="100" width="100" stroke="white" stroke-width="7" fill="none">
+   							<circle class="checkmark__circle" cx="50" cy="50" r="30" fill="none" />
+						</svg>
+						<svg class="elementX" height="100" width="100" stroke="white" stroke-width="7" fill="none">
+   							<path d="M25 25 L75 75 Z" />
+ 							<path d="M75 25 L25 75 Z" />	
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="strikes strikeNone" id="strike">
+				<svg height="320" width="320" class="pA V1">
+					<line x1="50" y1="0" x2="50" y2="320" stroke="white" stroke-width="7"/>
+				</svg>
+				<svg height="320" width="320" class="pA V2">
+					<line x1="160" y1="0" x2="160" y2="320" stroke="white" stroke-width="7"/>
+				</svg>
+				<svg height="320" width="320" class="pA V3">
+					<line x1="270" y1="0" x2="270" y2="320" stroke="white" stroke-width="7"/>
+				</svg>
+				<svg height="320" width="320" class="pA H1">
+					<line x1="0" y1="50" x2="320" y2="50" stroke="white" stroke-width="7"/>
+				</svg>
+				<svg height="320" width="320" class="pA H2">
+					<line x1="0" y1="160" x2="320" y2="160" stroke="white" stroke-width="7"/>
+				</svg>
+				<svg height="320" width="320" class="pA H3">
+					<line x1="0" y1="270" x2="320" y2="270" stroke="white" stroke-width="7"/>
+				</svg>
+				<svg height="320" width="320" class="pA C1">
+					<line x1="0" y1="0" x2="320" y2="320" stroke="white" stroke-width="7"/>
+				</svg>
+				<svg height="320" width="320" class="pA C2">
+					<line x1="320" y1="0" x2="0" y2="320" stroke="white" stroke-width="7"/>
+				</svg>
+			</div>
+    			</div>
+    			<div class="gameResults">
+    				<div id="gameResults" class="resultMsg"></div>
+    			</div>
+
+    		</div>
+    		<div class="gameFooter"> 
+    			<div class="restart pointer" id="restartGame">Restart</div>
+    		</div>
+    </div>
+    
+    	<!-- footer starts -->
+	<div class="footer">
+		Copyright &copy; &diamond;Vini&diamond;
+	</div>
+		
+        		<!-- The Modal -->
+		<div id="myModal" class="modal">
+			<span class="close" onclick="twitterSection.closeTwitterModal();">&times;</span>
+		  	<div class="modal-content">
+		    		<div class="modal-body" id="modal-body">
+		    		</div>
+		  	</div>
+		</div>
+		
+      </div>
+      
+    <script src="javascript/common.js"></script>
+    <script src="javascript/tictactoe.js"></script>
+       
+  </body>
+  	
+</html>
